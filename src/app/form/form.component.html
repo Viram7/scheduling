@@ -1,0 +1,81 @@
+<div class="form-container">
+  <form id="business-form">
+    <div class="form-group">
+      <label for="full-name">Full Name *</label>
+      <input type="text" id="full-name" name="full-name" placeholder="First Name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="whatsapp-number">WhatsApp Number *</label>
+      <input type="tel" id="whatsapp-number" name="whatsapp-number" placeholder="Phone" required />
+    </div>
+
+    <div class="form-group">
+      <label for="city">City *</label>
+      <input type="text" id="city" name="city" placeholder="City" required />
+    </div>
+
+    <div class="form-group">
+      <label for="purpose">
+        You're filling this out to learn how to build a profitable, self-sustaining business using our P.R.O.F.I.T optimization strategy, right? *
+      </label>
+      <select id="purpose" name="purpose" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="company-name">Company Name *</label>
+      <input type="text" id="company-name" name="company-name" placeholder="Organization" required />
+    </div>
+
+    <div class="form-group">
+      <label for="product-service">What is the name of your product/service/industry? *</label>
+      <input type="text" id="product-service" name="product-service" placeholder="Enter here" required />
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website</label>
+      <input type="url" id="website" name="website" placeholder="Web URL goes here" />
+    </div>
+
+    <div class="form-group">
+      <label for="yearly-revenue">What is your yearly Revenue? *</label>
+      <select id="yearly-revenue" name="yearly-revenue" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="below-100k">Below $100k</option>
+        <option value="100k-500k">$100k - $500k</option>
+        <option value="500k-plus">Above $500k</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="team-size">What is your current team size? *</label>
+      <select id="team-size" name="team-size" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="1-5">1-5</option>
+        <option value="6-20">6-20</option>
+        <option value="21-plus">21+</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="business-problems">Problems you're facing in your business right now? *</label>
+      <select id="business-problems" name="business-problems" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="revenue-growth">Revenue Growth</option>
+        <option value="team-expansion">Team Expansion</option>
+        <option value="market-strategy">Market Strategy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="specific-problem">What Problem Are You Facing? *</label>
+      <textarea id="specific-problem" name="specific-problem" placeholder="Type Your Problem Here" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Schedule Meeting</button>
+  </form>
+</div>

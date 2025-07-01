@@ -1,0 +1,72 @@
+<div id="body-up">
+  <div id="body">
+
+    <h1>Hey : You’re 1-step away from generating <span>2x Profits</span> </h1>
+    <div id="con">
+      <div class="strategy-call-card">
+        <button id="leftarrow" *ngIf="isform" (click)="ofcal()">
+          < </button>
+            <h2 class="title">Strategy Call</h2>
+            <div class="details">
+              <div class="detail-item">
+                <span class="icon">⏱️</span>
+                <span>30 Mins</span>
+              </div>
+              <div class="detail-item">
+                <span class="icon">📅</span>
+                <span>{{textdaym}}, {{textmonth}} {{textday}} , {{textyear}} </span>
+              </div>
+              <div class="detail-item">
+                <span class="icon">🌍</span>
+                <span>Asia/Calcutta (GMT+5:30)</span>
+              </div>
+              <div class="detail-item" id="detail-item-last">
+                <span class="icon">📝</span>
+                <span>Kindly take your time filling out this form, as <span id="hide-text" *ngIf="ishidetext">We’d like
+                    to understand your business—your current situation, goals, and challenges & if we see you as a good
+                    fit. Our consultant will schedule a Zoom meeting with Dr. Batra Sir
+
+                    In this session, we’ll present a customized “Game Plan” to tackle your obstacles and help you scale
+                    your business.
+
+                    If no slots are available, it may be due to high demand. Please email
+                    businesstalks.batra{{'@gmail'}}.com, and we’ll manually arrange an appointment for you.</span>
+                </span>
+              </div>
+              <button class="show-more" (click)="showhidetext()">Show More</button>
+            </div>
+            <div *ngIf="iscal" id="cal-body">
+              <h2>Select Date & Time</h2>
+              <div id="cal-con">
+                <div id="cal">
+                  <ejs-calendar id="cal-cal" [min]="fulltime" [(ngModel)]="cal_value"></ejs-calendar>
+                </div>
+                <div id="time_con" >
+
+                  <div *ngFor="let time of nov[tempday]" id="time" (click)="showbt()">
+
+                    <!-- <div>1</div> -->
+                    <div>
+                      <p *ngIf="istime"> {{time}} </p> <button id="b1" *ngIf="isbutton"> {{time}} </button> <button
+                        id="b2" *ngIf="isbutton" (click)="ofcal()"> <a [routerLink]="['/form']"
+                          routerLinkActive="router-link-active">Select</a> </button>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <h6>timezone </h6>
+              <h5> {{fulltime}} </h5>
+            </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+<app-form *ngIf="isform"> </app-form>

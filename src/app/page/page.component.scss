@@ -1,0 +1,175 @@
+#body-up{
+  width: 100%;
+//  background-color: chartreuse;
+ display: flex;
+ justify-content:center;
+}
+#body{
+  // background-color: rgb(158, 89, 89);
+  width: 800px;
+  h1{
+    font-size: 50px;
+    text-align: center;
+    span{
+      color: rgb(16, 186, 16);
+    }
+  }
+
+
+}
+
+#con{
+  // width: 100;
+  // background-color: red;
+  // text-align: center;
+  // display: flex;
+  // justify-content: center;
+}
+
+
+.strategy-call-card {
+  margin: 30px;
+width: 800px;
+  padding: 20px;
+  // background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border:1px solid  #55555527;
+    padding: 20px;
+    border-radius: 10px;
+
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+
+      .icon {
+        font-size: 1.2rem;
+        color: #888;
+      }
+    }
+  }
+#detail-item-last{
+  align-items: start;
+}
+  .show-more {
+    all:unset;
+    margin-top: 1rem;
+    color: blue;
+    // background-color: #6a0dad;
+    // color: white;
+
+    border: none;
+    // padding: 0.5rem 1rem;
+    // border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    // transition: background-color 0.3s;
+    a{
+      text-decoration: none;
+    }
+
+  }
+}
+
+#cal-con{
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+#time_con{
+  // all:unset;
+
+  // display: inline-block;
+  // width: 300px;
+  // border: 2px solid rgb(116, 96, 245);
+}
+
+#time{
+
+
+  div{
+
+    border: 2px solid rgb(116, 96, 245);
+
+    margin:5px;
+    width: 250px;
+    height: 50px;
+    padding: 2px;
+    // display: block;
+      // margin:2px;
+      border-radius: 5px;
+
+    // font-size: larger;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    #b1{
+      background-color: #888;
+    }
+    #b2{
+      // all:unset;
+      background-color: blueviolet;
+    }
+    button{
+      // display: none;
+      all:unset;
+      transition: 400ms;
+      color: white;
+      a{
+        all:unset;
+        text-decoration:none ;
+      }
+
+
+      width: 45%;
+      gap:10px;
+      height: 50px;
+      // margin:2px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 5px;
+
+    }
+
+  }
+}
+#cal-body{
+  // background-color: white;
+  padding: 30px;
+
+}
+#cal-cal{
+
+  display: inline;
+  // width: 10px;
+}
+#leftarrow{
+  // all:unset;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 1px solid wheat;
+  background-color: white;
+  text-align: center;
+  color: blue;
+}
